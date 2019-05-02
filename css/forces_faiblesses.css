@@ -1,0 +1,371 @@
+@font-face 
+{
+    font-family: 'rubikregular';
+    src: url('rubik-regular-webfont.woff2') format('woff2'),
+         url('rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    background: url("images/purplespace.png") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: auto;
+}
+
+body 
+{
+	margin: 0;
+}
+
+#icon-bar
+{
+	display: none;
+}
+
+header
+{
+	text-align: center;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+a + h1
+{
+	margin-top: 5px;
+}
+
+header h1
+{
+	font-size: 60px;
+    color: #a8a2b0;
+    text-shadow: #341f57 1px 1px 1px, #341f57 -1px 1px 1px, #341f57 -1px -1px 1px, #341f57 1px -1px 1px;
+    height: 40px;
+}
+
+#nav_bar
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #42433e;
+	border: #2c2d28 solid 5px;
+	border-radius: 10px;
+	height: 60px;
+	width: 85%;
+	margin: auto;
+}
+
+#nav_bar ul
+{
+	display: flex;
+    list-style-type: none;
+}
+
+#nav_bar li
+{
+    margin-right: 14%;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+#nav_bar a
+{
+	color: white;
+    text-decoration: none;
+}
+
+#nav_bar a:hover
+{
+	color: #b07dc0;
+}
+
+section
+{
+	background-color: #42433e;
+	border: #2c2d28 solid 5px;
+	color: white;
+	height: 100%;
+	width: 85%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#types
+{
+	display: flex;
+	justify-content: center;
+	height: 113px;
+	margin-top: 20px;
+}
+
+.plante
+{
+	margin-right: 10px;
+}
+
+.feu
+{
+	margin-right: 10px;
+}
+
+.eau
+{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.foudre
+{
+	margin-right: 10px;
+}
+
+#types h1
+{
+	font-style: normal;
+	font-size: 48px;
+	text-align: center;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+article
+{
+	margin-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+/* ================= Dimensionnement du tableau ================= */
+
+table
+{
+	border-collapse: collapse;
+}
+
+table td
+{
+	border: 1px solid white;
+	width: 150px;
+}
+
+#forces_faiblesses
+{
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 100%;
+}
+
+#forces_faiblesses > h3
+{
+	display: none;
+}
+
+#forces_faiblesses > table
+{
+	margin: auto;
+	margin-top: 50px;
+}
+
+#forces_faiblesses > table > tbody > tr > td
+{
+	position: relative;
+	font-style: italic;
+	text-align: center;
+	font-size: 24px;
+	height: 64px;
+  	width: 192px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(2) > th
+{
+	font-style: normal;
+	text-align: center;
+	font-size: 32px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+/* ================= Dynamisme des cases ================= */
+
+
+#forces_faiblesses > table > tbody > tr:nth-child(1) > td:nth-child(1):hover
+{
+    background-color: #e2d7d7;       
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(1) > td:nth-child(2):hover
+{
+    background-color: #ea866b;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(1) > td:nth-child(3):hover
+{
+    background-color: #da8b3f;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(1) > td:nth-child(4):hover
+{
+    background-color: #75cdfe;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(1) > td:nth-child(5):hover
+{
+    background-color: #d8f0fe;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(2) > td:nth-child(1):hover
+{
+    background-color: #ffffff;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(2) > td:nth-child(3):hover
+{
+    background-color: #7dcda9;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(3) > td:nth-child(1):hover
+{
+    background-color: #9facac;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(3) > td:nth-child(2):hover
+{
+    background-color: #b400db;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(4) > td:nth-child(1):hover
+{
+    background-color: #7a767c;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(4) > td:nth-child(2):hover
+{
+    background-color: #e6ff3a;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(5) > td:nth-child(1):hover
+{
+    background-color: #bc7fe1;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(5) > td:nth-child(2):hover
+{
+    background-color: #fbd794;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(6) > td:nth-child(1):hover
+{
+    background-color: #817df4;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(6) > td:nth-child(2):hover
+{
+    background-color: #b5ffec;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(6) > td:nth-child(3):hover
+{
+    background-color: #ffffff;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(6) > td:nth-child(4):hover
+{
+    background-color: #bd9f69;         
+}
+
+#forces_faiblesses > table > tbody > tr:nth-child(6) > td:nth-child(5):hover
+{
+    background-color: #e792ef;         
+}
+
+
+.your_type .text_describe {
+	font-size: 14px;
+	font-style: normal;
+	text-align: justify;
+    visibility: hidden;
+    width: 100%;
+    background-color: #2e2e2b;
+    color: #ffffff;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 3px 8px 0px 8px;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.your_type .text_describe_low {
+	font-size: 14px;
+	font-style: normal;
+	text-align: justify;
+    visibility: hidden;
+    width: 100%;
+    background-color: #2e2e2b;
+    color: #ffffff;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 3px 8px 0px 8px;
+    margin-top: -90%;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.your_type .text_describe_below {
+	font-size: 14px;
+	font-style: normal;
+	text-align: justify;
+    visibility: hidden;
+    width: 100%;
+    background-color: #2e2e2b;
+    color: #ffffff;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 3px 8px 0px 8px;
+    margin-top: -90%;
+    position: absolute;
+    overflow: auto;
+    z-index: 1;
+}
+
+.titre_attaques, .titre_pokemon {
+	text-decoration: underline;
+}
+
+.attaques_effec, .attaques_less_effec, .attaques_no_effec, .pokemon_resistence, .pokemon_no_resistence, .pokemon_invincible {
+	font-style: italic;
+}
+
+.your_type:hover .text_describe {
+    visibility: visible;
+}
+
+.your_type:hover .text_describe_low {
+    visibility: visible;
+}
+
+.your_type:hover .text_describe_below {
+    visibility: visible;
+}
+
+footer
+{
+	padding-top: 40px;
+	margin-bottom: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+	font-family: 'rubikregular', Arial, sans-serif;
+}

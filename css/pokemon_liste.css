@@ -1,0 +1,285 @@
+@font-face 
+{
+    font-family: 'rubikregular';
+    src: url('rubik-regular-webfont.woff2') format('woff2'),
+         url('rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    background: url("images/purplespace.png") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: auto;
+}
+
+body
+{
+	margin: 0;
+}
+
+#icon-bar
+{
+	display: none;
+}
+
+header
+{
+	text-align: center;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+a + h1
+{
+	margin-top: 5px;
+}
+
+header h1
+{
+	font-size: 60px;
+    color: #a8a2b0;
+    text-shadow: #341f57 1px 1px 1px, #341f57 -1px 1px 1px, #341f57 -1px -1px 1px, #341f57 1px -1px 1px;
+    height: 40px;
+}
+
+#nav_bar
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #42433e;
+	border: #2c2d28 solid 5px;
+	border-radius: 10px;
+	height: 60px;
+	width: 85%;
+	margin: auto;
+}
+
+#nav_bar ul
+{
+	display: flex;
+    list-style-type: none;
+}
+
+#nav_bar li
+{
+    margin-right: 14%;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+#nav_bar a
+{
+	color: white;
+    text-decoration: none;
+}
+
+#nav_bar a:hover
+{
+	color: #b07dc0;
+}
+
+section
+{
+	background-color: #42433e;
+	border: #2c2d28 solid 5px;
+	color: white;
+	height: 100%;
+	width: 85%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#types
+{
+	display: flex;
+	justify-content: center;
+	height: 113px;
+	margin-top: 20px;
+}
+
+.plante
+{
+	margin-right: 10px;
+}
+
+.feu
+{
+	margin-right: 10px;
+}
+
+.eau
+{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.foudre
+{
+	margin-right: 10px;
+}
+
+#type_1
+{
+	color: #a8601a;
+}
+
+#type_2
+{
+	color: #2e845d;
+}
+
+#type_3
+{
+	color: #4841f2;
+}
+
+#type_4
+{
+	color: #1583c1;
+}
+
+#type_5
+{
+	color: #78c5b1;
+}
+
+#type_6
+{
+	color: #c525d5;
+}
+
+#type_7
+{
+	color: #f1cee2;
+}
+
+#type_8
+{
+	color: #b29c96;
+}
+
+#type_9
+{
+	color: #707777;
+}
+
+#type_10
+{
+	color: #66007c;
+}
+
+#type_11
+{
+	color: #7bc3eb;
+}
+
+#type_12
+{
+	color: #be411f;
+}
+
+#type_13
+{
+	color: #8844b0;
+}
+
+#type_14
+{
+	color: #8acdf2;
+}
+
+#type_15
+{
+	color: #a2b800;
+}
+
+#type_16
+{
+	color: #ba9247;
+}
+
+#type_17
+{
+	color: #7e5915;
+}
+
+#type_18
+{
+	color: #000000;
+}
+
+#types h1
+{
+	font-style: normal;
+	font-size: 48px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+article
+{
+	margin-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+#pokedex
+{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#inner_pokedex
+{
+	text-align: center;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+table td
+{
+	border: 3px double #ffffff;
+	width: 114px;
+}
+
+tr:nth-child(2) > td
+{
+	height: 192px;
+}
+
+tr:nth-child(2) > td > img
+{
+	display: flex;
+  	max-height: 150px;
+  	max-width: 150px;
+  	margin: auto;
+}
+
+tr:nth-child(1)
+{
+	text-align: center;
+	font-size: 16px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+#pokemon
+{
+	display: inline-block;
+	margin-right: 0.5%;
+	margin-bottom: 7px;
+}

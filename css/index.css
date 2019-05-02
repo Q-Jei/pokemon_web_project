@@ -1,0 +1,378 @@
+@font-face 
+{
+    font-family: 'rubikregular';
+    src: url('rubik-regular-webfont.woff2') format('woff2'),
+         url('rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    background: url("images/purplespace.png") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin: auto;
+}
+
+body 
+{
+	margin: 0;
+}
+
+#icon-bar
+{
+	display: none;
+}
+
+header
+{
+	text-align: center;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+a + h1
+{
+	margin-top: 5px;
+}
+
+header h1
+{
+	font-size: 60px;
+    color: #a8a2b0;
+    text-shadow: #341f57 1px 1px 1px, #341f57 -1px 1px 1px, #341f57 -1px -1px 1px, #341f57 1px -1px 1px;
+    height: 40px;
+}
+
+#nav_bar
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #42433e;
+	border: #2c2d28 solid 5px;
+	border-radius: 10px;
+	height: 60px;
+	width: 85%;
+	margin: auto;
+}
+
+#nav_bar ul
+{
+	display: flex;
+    list-style-type: none;
+}
+
+#nav_bar li
+{
+    margin-right: 14%;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+#nav_bar a
+{
+	color: white;
+    text-decoration: none;
+}
+
+#nav_bar a:hover
+{
+	color: #b07dc0;
+}
+
+section
+{
+	background-color: #42433e;
+	border: #2c2d28 solid 5px;
+	color: white;
+	height: 100%;
+	width: 85%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#types
+{
+	display: flex;
+	justify-content: center;
+	height: 113px;
+	margin-top: 20px;
+}
+
+.plante
+{
+	margin-right: 10px;
+}
+
+.feu
+{
+	margin-right: 10px;
+}
+
+.eau
+{
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.foudre
+{
+	margin-right: 10px;
+}
+
+#types h1
+{
+	font-style: normal;
+	font-size: 48px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+article
+{
+	margin-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+#divType
+{
+	margin-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+/* ================ Gestion des tableaux d'une manière générale ================ */
+
+caption
+{
+	font-size: 24px;
+	margin-bottom: 5px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+table td
+{
+	border: 1px solid white;
+	width: 150px;
+}
+
+tr > td > img
+{
+	display: flex;
+  	max-height: 128px;
+  	max-width: 128px;
+  	margin: auto;
+}
+
+td:nth-child(1)
+{
+	font-style: normal;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+/* ================ Formatage des cellues du tableau numero 1 ================ */
+
+.tableauA
+{
+	float: left;
+	margin-bottom: 10px;
+}
+
+table.tableauA > tbody > tr > td
+{
+	font-size: 20px;
+}
+
+table.tableauA > tbody > tr > td:nth-child(2)
+{
+	width: 500px;
+	font-size: 16px;
+	text-align: center;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+table.tableauA > tbody > tr > td:nth-child(1)
+{
+	padding-top: 20px;
+	padding-bottom: 19px;
+}
+
+/* ================ Formatage des cellues du tableau numero 2 ================ */
+
+.tableauB
+{
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+table.tableauB > tr:nth-child(1) > img
+{
+	display: flex;
+  	max-height: 160px;
+  	max-width: 160px;
+  	margin: auto;
+}
+
+table.tableauB > tbody > tr:nth-child(2)
+{
+	font-style: italic;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+table.tableauB > tbody > tr:nth-child(3)
+{
+	text-align: center;
+	font-size: 16px;
+	font-family: 'rubikregular', Arial, sans-serif;
+}
+
+/* Style des titres des divs pour chaque type */
+
+#typeTitre1
+{
+	color: #a8601a;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre2
+{
+	color: #2e845d;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre3
+{
+	color: #4841f2;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre4
+{
+	color: #1583c1;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre5
+{
+	color: #78c5b1;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre6
+{
+	color: #c525d5;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre7
+{
+	color: #f1cee2;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre8
+{
+	color: #e2d7d7;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre9
+{
+	color: #707777;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre10
+{
+	color: #66007c;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre11
+{
+	color: #7bc3eb;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre12
+{
+	color: #be411f;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre13
+{
+	color: #8844b0;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre14
+{
+	color: #8acdf2;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre15
+{
+	color: #a2b800;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre16
+{
+	color: #ba9247;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre17
+{
+	color: #7e5915;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#typeTitre18
+{
+	color: #000000;
+	font-weight: bold;
+	font-size: 32px;
+}

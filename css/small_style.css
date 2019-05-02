@@ -1,0 +1,145 @@
+@media screen and (max-width: 1640px)
+
+{
+	.tableauA {
+		float: none;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 1280px)
+
+{
+	#div1 > img.game1, #div2 > img.game2, #div3 > img.game3, #div4 > img.game4, #div5 > img.game5, #div6 > img.game6, #div7 > img.game7, #div8 > img.game8, #div9 > img.game9, #div10 > img.game10, #div11 > img.game11, #div12 > img.game12, #div13 > img.game13, #div14 > img.game14, #div15 > img.game15, #div16 > img.game16, #div17 > img.game17, #div18 > img.game18 {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#typeTitre1, #typeTitre2, #typeTitre3, #typeTitre4, #typeTitre5, #typeTitre6, #typeTitre7, #typeTitre8, #typeTitre9, #typeTitre10, #typeTitre11, #typeTitre12, #typeTitre13, #typeTitre14, #typeTitre15, #typeTitre16, #typeTitre17, #typeTitre18 {
+		text-align: center;
+	}
+
+	#div1 > p, #div2 > p, #div3 > p, #div4 > p, #div5 > p, #div6 > p, #div7 > p, #div8 > p, #div9 > p, #div10 > p, #div11 > p, #div12 > p, #div13 > p, #div14 > p, #div15 > p, #div16 > p, #div17 > p, #div18 > p {
+		text-align: center;
+	}
+
+	#icon-bar {
+		display: flex;
+		justify-content: flex-end;
+    	width: 100%;
+    	background-color: #2c2d28;
+    	overflow: auto;
+	}
+
+	#icon-bar a {
+    	float: left;
+    	width: 10%;
+    	text-align: center;
+    	padding: 12px 0;
+    	transition: all 0.3s ease;
+    	color: white;
+    	font-size: 24px;
+	}
+
+	#mySidenav {
+		background-color: #1c1c1c;
+	}
+
+	#icon-bar a:hover {
+    	background-color: #000;
+	}
+
+	#nav_bar {
+		display: none;
+	}
+
+	#titre_principal > div {
+		margin-bottom: -30px;
+	}
+}
+
+@media all and (max-width: 800px)
+
+{
+	#types > img.plante {
+		display: none;
+	}
+
+	#types > img.feu {
+		display: none;
+	}
+
+	#types > img.eau {
+		display: none;
+	}
+
+	#types > img.foudre {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px)
+
+{
+	table.tableauB > tbody > tr:nth-child(1) , table.tableauB > tbody > tr:nth-child(2) , table.tableauB > tbody > tr:nth-child(3) {
+ 		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 800px)
+
+{
+	#div1 > img.game1, #div2 > img.game2, #div3 > img.game3, #div4 > img.game4, #div5 > img.game5, #div6 > img.game6, #div7 > img.game7, #div8 > img.game8, #div9 > img.game9, #div10 > img.game10, #div11 > img.game11, #div12 > img.game12, #div13 > img.game13, #div14 > img.game14, #div15 > img.game15, #div16 > img.game16, #div17 > img.game17, #div18 > img.game18 {
+		width: 75%;
+    	height: auto;
+	}
+}
+
+@media screen and (max-width: 1080px)
+
+{
+
+	#forces_faiblesses > table > tbody > tr {
+ 		display: flex;
+		flex-direction: column;
+	}
+
+	#forces_faiblesses > table > tbody > tr > td {
+		padding-top: 32px;
+	}
+
+	#forces_faiblesses > table > tbody > tr > th {
+ 		display: none;
+	}
+
+	#forces_faiblesses > h3 {
+		display: inline-block;
+		margin-bottom: -5px;
+		font-style: normal;
+		text-align: center;
+		font-size: 32px;
+		font-family: 'rubikregular', Arial, sans-serif;
+	}
+
+	.text_describe {
+		display: none;
+	}
+
+	.text_describe_low {
+		display: none;
+	}
+
+	.text_describe_below {
+		display: none;
+	}
+}
+
+@media all and (max-width: 510px)
+
+{
+	#article_pokedex {
+		padding-top: 30px;
+	}
+}
