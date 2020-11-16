@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 17 déc. 2018 à 08:43
--- Version du serveur :  5.7.23
--- Version de PHP :  7.2.10
+-- Généré le : lun. 16 nov. 2020 à 09:59
+-- Version du serveur :  5.7.31
+-- Version de PHP : 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `fil_rouge`
+-- Base de données : `fil_rouge`
 --
 
 -- --------------------------------------------------------
@@ -37,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `attaques` (
   `special` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `inoffensif` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=77 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=97 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `attaques`
@@ -99,7 +98,27 @@ INSERT INTO `attaques` (`id`, `nom_attaque`, `id_type`, `physique`, `special`, `
 (53, 'Vibrobscur', 18, 'non', 'oui', 'non'),
 (54, 'Tranche-Nuit', 18, 'oui', 'non', 'non'),
 (55, 'Tricherie', 18, 'oui', 'non', 'non'),
-(56, 'Machination', 18, 'non', 'non', 'oui');
+(56, 'Machination', 18, 'non', 'non', 'oui'),
+(77, 'Aurasphère', 1, 'non', 'oui', 'non'),
+(78, 'Exploforce', 1, 'non', 'oui', 'non'),
+(79, 'Lame Ointe', 1, 'non', 'oui', 'non'),
+(80, 'Gonflette', 1, 'non', 'non', 'oui'),
+(81, 'Prévention', 1, 'non', 'non', 'oui'),
+(82, 'Détection', 1, 'non', 'non', 'oui'),
+(83, 'Lame-Feuille', 2, 'oui', 'non', 'non'),
+(84, 'Poing Dard', 2, 'oui', 'non', 'non'),
+(85, 'Éco-Sphère', 2, 'non', 'oui', 'non'),
+(86, 'Nœud Herbe', 2, 'non', 'oui', 'non'),
+(87, 'Tempêteverte', 2, 'non', 'oui', 'non'),
+(88, 'Aromathérapi', 2, 'non', 'non', 'oui'),
+(89, 'Vampigraine', 2, 'non', 'non', 'oui'),
+(90, 'Para-Spore', 2, 'non', 'non', 'oui'),
+(91, 'Cascade', 4, 'oui', 'non', 'non'),
+(92, 'Aqua-Jet', 4, 'oui', 'non', 'non'),
+(93, 'Danse Pluie', 4, 'non', 'non', 'oui'),
+(94, 'Détrempage', 4, 'non', 'non', 'oui'),
+(95, 'Tourniquet', 4, 'non', 'non', 'oui'),
+(96, 'Ébullition', 4, 'non', 'oui', 'non');
 
 -- --------------------------------------------------------
 
@@ -148,7 +167,7 @@ INSERT INTO `pokemons` (`id`, `nom_pokemon`, `numero`, `type`, `image`, `seconda
 (25, 'Dimoclès', 680, 9, 'https://cdn.bulbagarden.net/upload/e/ef/680Doublade.png', 13),
 (26, 'Hypnomade', 97, 6, 'https://www.pokepedia.fr/images/3/3a/Hypnomade-RFVF.png', 6),
 (27, 'Lewsor', 605, 6, 'https://www.pokepedia.fr/images/e/e4/Lewsor-NB.png', 6),
-(28, 'Floette', 670, 7, 'https://www.pokepedia.fr/images/d/d6/Floette-r-XY.png', 7),
+(28, 'Floette', 670, 7, 'https://cdn.bulbagarden.net/upload/thumb/1/17/670Floette.png/250px-670Floette.png', 7),
 (36, 'Chartor', 324, 12, 'https://cdn.bulbagarden.net/upload/3/3b/324Torkoal.png', 12),
 (29, 'Tranchodon', 612, 3, 'https://cdn.bulbagarden.net/upload/8/8f/612Haxorus.png', 3),
 (30, 'Arbok', 24, 10, 'https://cdn.bulbagarden.net/upload/c/cd/024Arbok.png', 10),
@@ -189,7 +208,7 @@ CREATE TABLE IF NOT EXISTS `types` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `nom_type` varchar(300) COLLATE utf8_unicode_ci NOT NULL,
   `id_type` int(11) NOT NULL,
-  `caracteristiques` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `caracteristiques` varchar(2000) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -198,10 +217,10 @@ CREATE TABLE IF NOT EXISTS `types` (
 --
 
 INSERT INTO `types` (`id`, `nom_type`, `id_type`, `caracteristiques`) VALUES
-(1, 'Combat', 1, 'Vise l\'offensive physique.'),
-(2, 'Plante', 2, 'Des Pokemon 100% bio aux attaques de grande puissance.'),
+(1, 'Combat', 1, 'En défense, le type Combat est faible face aux types Psy, Fée et Vol. Cependant, il résiste particulièrement bien face aux types Insecte, Roche et Ténèbres. Composé d\'énormément de Pokémon puissants en attaque, le type Combat ne brille pas pour ses capacités défensives mais joue un rôle primordial de sweeper. Le type Combat a la particularité d\'être très efficace face aux types Glace, Normal, Roche, Ténèbres et Acier, particulièrement représentés en stratégie Pokémon. Même s\'il est inefficace face au type Spectre, et peu efficace contre les types Fée, Insecte, Poison, Psy et Vol, il est très utile en arène pour venir à bout de puissants adversaires en toutes circonstances.'),
+(2, 'Plante', 2, 'Le type Plante est connu pour être très mauvais en défense. En effet, même s\'il est résistant aux types Eau, Electrik, Plante et Sol qui peuvent avoir un rôle dévastateur en combat, les Pokémon Plante sont faibles face aux types Feu, Glace, Insecte, Poison et Vol, dont la plupart sont connus pour leur puissance dévastatrice en attaque ou attaque spéciale. En attaque, le type Plante est très efficace contre les types Eau, Roche et Sol, qui sont fréquent en stratégie. Cependant, il est peu efficace face aux types Acier, Dragon, Feu, Insecte, Plante, Poison et Vol. La combinaison de son trop grand nombre de faiblesse et sa faible couverture offensive en font un type peu exploité et difficile à utiliser en arène.'),
 (3, 'Dragon', 3, 'Pokemon très rares et puissants avec des résistances à des types très courants.'),
-(4, 'Eau', 4, 'Tous les doubles types possibles avec le type Eau existent. C\'est le type le plus représenté.'),
+(4, 'Eau', 4, 'Bien qu\'il soit faible face aux types Plante et Electrik, le type Eau est l\'un des meilleurs en défense grâce à ses résistances aux types Acier, Eau, Feu et Glace. Il permet ainsi de contrer les attaques de nombreux types offensifs très répandus en stratégie tout en profitant de la faible part de Pokémon capables de lui nuire. En attaque, le type Eau est peu efficace contre les types Dragon, Eau et Plante. En revanche, il est très efficace contre les types Feu, Roche et Sol, que l\'on retrouve dans toutes les équipes stratégiques. Cet élément est donc très intéressant puisqu\'il peut vous offrir des opportunités offensives et défensives selon vos besoins.'),
 (5, 'Insecte', 5, 'Pour tous les fans d\'entomologie.'),
 (6, 'Psy', 6, 'C\'est sûrement un complexe en rapport à l\'enfance.'),
 (7, 'Fée', 7, 'Tous des amis de Peter Pan.'),

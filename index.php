@@ -58,7 +58,7 @@
 
                 <img src="css/images/game<?php echo $reponse_type['id'] ?>.png" class="game<?php echo $reponse_type['id'] ?>" alt="" />
 
-                <p class="description" style='font-style: italic;'>"<?php echo $reponse_type['caracteristiques'] ?>"</p>
+                <p class="description"><?php echo $reponse_type['caracteristiques'] ?></p>
 
                 <div id="tableaux">
 
